@@ -132,3 +132,85 @@ button {
     color-scheme: dark;
   }
 }
+@media (max-width: 768px) {
+  .view-box,
+  .forum-wrapper,
+  .detail-box,
+  .main-wrapper {
+    width: 95%;
+    min-width: auto;
+    max-width: 100%;
+    padding: 5%;
+  }
+
+  .side-bar,
+  .side-bar-wrapper {
+    position: static;
+    width: 100%;
+    margin: 10px 0;
+    transform: none;
+  }
+  /* 폰트 크기 축소 */
+  body,
+  button,
+  input,
+  textarea,
+  select {
+    font-size: 14px; /* 기본 폰트 크기 축소 */
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .title-wrapper {
+    font-size: 16px;
+  }
+
+  .forum-wrapper,
+  .content-holder,
+  .detail-box {
+    font-size: 13px;
+  }
+
+  /* 더 작은 화면에 대한 추가 조정 */
+  @media (max-width: 480px) {
+    body,
+    button,
+    input,
+    textarea,
+    select {
+      font-size: 12px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
+    .title-wrapper {
+      font-size: 14px;
+    }
+
+    .forum-wrapper,
+    .content-holder,
+    .detail-box {
+      font-size: 12px;
+    }
+  }
+}

@@ -11,7 +11,13 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.logo}>
         <Link href="/">
-          <Image src="/logo.jpeg" alt="NODE" width={150} height={50} />
+          <Image
+            src="/logo.jpeg"
+            alt="NODE"
+            width={150}
+            height={50}
+            layout="responsive"
+          />
         </Link>
       </div>
       <ul className={styles.navLinks}>
