@@ -1,0 +1,35 @@
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import dynamic from 'next/dynamic';
+import styles from './Navbar.module.css';
+
+const DynamicDropdown = dynamic(() => import('./Dropdown'), { ssr: false });
+
+const Navbar = () => {
+  return (
+    <nav className={styles.navbar}>
+      <div className={styles.logo}>
+        <Link href="/">
+          <Image src="/logo.jpeg" alt="Node Korea" width={200} height={60} />
+        </Link>
+      </div>
+      <ul className={styles.navLinks}>
+        <li>
+          <Link href="/club">Club</Link>
+        </li>
+        <li>
+          <Link href="/jobs">Jobs</Link>
+        </li>
+        <li>
+          <Link href="/contact">Contact Us</Link>
+        </li>
+        <li className={styles.profileContainer}>
+          <DynamicDropdown />
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;
