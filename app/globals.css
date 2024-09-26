@@ -102,6 +102,31 @@ main {
   padding: none;
   margin: none;
 }
+.p-20 {
+  padding: 20px;
+}
+
+.main-wrapper {
+  display: block;
+  width: 90vw;
+  height: auto;
+  padding: 10vw;
+  background: rgba(73, 79, 138, 0.2);
+  text-align: center;
+}
+input {
+  box-sizing: border-box;
+  padding: 10px;
+  display: block;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+button {
+  padding: 10px 15px;
+  background: lightgray;
+  border: none;
+  border-radius: 5px;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

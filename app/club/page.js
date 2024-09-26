@@ -1,5 +1,6 @@
 import { connectDB } from '../../utils/database';
 import Link from 'next/link';
+import DetailLink from './detail_link';
 
 export default async function Home() {
   let client = await connectDB;
@@ -20,6 +21,7 @@ export default async function Home() {
               </div>
             </div>
           </Link>
+          <DetailLink />
         </div>
       ))}
     </div>
