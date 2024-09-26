@@ -28,16 +28,20 @@ main {
 }
 .view-box {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   text-align: center;
   width: 90vw;
   height: auto;
   background-color: #f0f0f0;
+  padding: 1%;
+  border-radius: 1%;
+  margin: auto;
 }
 
 .forum-wrapper {
-  width: 30%;
+  width: 70%;
   background: greenyellow;
   border-radius: 10px;
   text-align: left;
@@ -68,6 +72,36 @@ main {
   background: ivory;
 }
 
+.detail-box {
+  display: inline-block;
+  margin: 2vw;
+  background-color: rgba(73, 79, 138, 0.4);
+  text-align: left;
+  padding: 1.5vw;
+  border-radius: 10px;
+  min-width: 70vw;
+  max-width: 80vw;
+}
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  height: 60vh;
+  min-width: 10vw;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 3vw;
+  margin-top: 40vh;
+  transform: translateY(-30%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -4vw;
+}
+.side-bar-wrapper {
+  width: 10vw;
+  padding: none;
+  margin: none;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
