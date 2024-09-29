@@ -7,7 +7,7 @@ export default function DetailLink() {
   return (
     <button
       onClick={() => {
-        router.prefetch('/detail/dsds');
+        router.push('/detail/dsds');
       }}
     >
       버튼
