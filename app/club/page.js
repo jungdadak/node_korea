@@ -1,6 +1,7 @@
 import { connectDB } from '../../utils/database';
 import Link from 'next/link';
 import DetailLink from './detail_link';
+import Listitem from './Listitem';
 
 export default async function Home() {
   let client = await connectDB;
@@ -9,21 +10,7 @@ export default async function Home() {
 
   return (
     <div className="view-box">
-      {result.map((a, i) => (
-        <div className="forum-wrapper" key={i}>
-          <Link href={'./details/' + result[i]._id}>
-            <div className="line-wrapper">
-              <div className="title-wrapper">
-                <h6 style={{ paddingRight: '7px' }}>Title : {a.title}</h6>
-              </div>
-              <div className="content-holder">
-                <p style={{ fontSize: '10px' }}>{a.content}</p>
-              </div>
-            </div>
-          </Link>
-          <DetailLink />
-        </div>
-      ))}
+      <Listitem result={result} />
     </div>
   );
 }

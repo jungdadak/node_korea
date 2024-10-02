@@ -1,3 +1,4 @@
+'use client';
 export default function write() {
   return (
     <div className="p-20">
@@ -14,6 +15,7 @@ export default function write() {
       <form action="/api/write" method="POST">
         <input type="text" name="title" placeholder="글제목쓰세요" />
         <input type="text" name="content" placeholder="글내용 쓰세요" />
+        <input type="text" name="_id" style={{ display: 'none' }} />
         <button type="submit">슈슉~</button>
       </form>
     </div>

@@ -114,6 +114,7 @@ main {
   padding: 10vw;
   background: rgba(73, 79, 138, 0.2);
   text-align: center;
+  margin: auto;
 }
 input {
   box-sizing: border-box;
@@ -212,6 +213,11 @@ button {
     .content-holder,
     .detail-box {
       font-size: 12px;
+    }
+
+    .login-link {
+      cursor: pointer;
+      color: rgba(79, 83, 138, 0.8);
     }
   }
 }

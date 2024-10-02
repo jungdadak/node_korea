@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import styles from './navbar.module.css';
+import LoginBtn from './loginlink';
 
 const DynamicDropdown = dynamic(() => import('./Dropdown'), { ssr: false });
 
@@ -29,6 +30,9 @@ const Navbar = () => {
         </li>
         <li>
           <Link href="/contact">Contact Us</Link>
+        </li>
+        <li>
+          <LoginBtn />
         </li>
         <li className={styles.profileContainer}>
           <DynamicDropdown />
